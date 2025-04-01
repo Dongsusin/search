@@ -62,3 +62,9 @@ button:focus {
 input:focus::placeholder {
   color: #ffffff;
 }
+
+.title {
+  font-size: 5rem;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
