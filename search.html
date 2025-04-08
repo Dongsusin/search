@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지뢰찾기</title>
+    <link href="./search.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="overlay" id="gameOverOverlay">
+      <div class="message">
+        <h2>게임 종료</h2>
+        <p id="end-message"></p>
+        <button id="restart">게임 다시 시작</button>
+      </div>
+    </div>
+
+    <div class="container p10">
+      <div class="p10" id="minesweeper"></div>
+      <div class="p10" id="controller">
+        <input
+          type="number"
+          id="size"
+          placeholder="크기(2~10)"
+          max="10"
+          min="2"
+        />
+        <input
+          type="number"
+          id="mine-count"
+          placeholder="지뢰갯수(1~99)"
+          max="99"
+          min="1"
+        />
+        <button id="submit">설정</button>
+
+        <div id="dashboard" class="p10">
+          <p id="play-time">플레이 시간: 0초</p>
+          <p id="mine-count-text">전체 지뢰 갯수: 0개</p>
+          <p id="flag-count-text">깃발 갯수: 0개</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="preview-container p10">
+      <div id="preview" class="p10"></div>
+    </div>
+    <!--script-->
+    <script src="./constant.js"></script>
+    <script src="./search.js"></script>
+  </body>
+</html>
